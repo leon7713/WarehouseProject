@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="WarehouseProject.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WarehouseProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+   <StackPanel>
+      <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 200, 0, 0">
+         <TextBox x:Name="XTB" PlaceholderText="X size" Width="100" FontSize="15" Margin="20"/>
+         <TextBox x:Name="YTB" PlaceholderText="Y size" Width="100" FontSize="15" Margin="20"/>
+         <TextBox x:Name="AmountTB" PlaceholderText="Amount" Width="100" FontSize="15" Margin="20"/>
+         <Button x:Name="EnterBtn" Content="Add box/boxes" Margin="20" Click="EnterBtn_Click"/>
+         <Button x:Name="FindBtn" Content="Find boxes" Margin="20" Click="FindBtn_Click"/>
+         <Button x:Name="FindPresentBtn" Content="Find Present box" Margin="20" Click="FindPresentBtn_Click"/>
+      </StackPanel>
+      <StackPanel>
+      </StackPanel>
+      <StackPanel>
+         <TextBox x:Name="MainTB" Width="500" Height="35" Margin="20" BorderBrush="Black" TextAlignment="Center"
+                  FontWeight="Bold"/>
+         <TextBlock x:Name="StatusTB" FontSize="15" Margin="20" HorizontalTextAlignment="Center" FontWeight="Bold"/>
+      </StackPanel>
+   </StackPanel>
+</Page>
